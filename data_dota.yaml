@@ -1,0 +1,31 @@
+# DOTA v1.0 dataset configuration for OBB tasks
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# Path to DOTA dataset (adjust if your paths are different)
+path: ./data/DOTAv1  # dataset root dir
+
+train: images/train  # train images (relative to 'path')
+val: images/val    # val images (relative to 'path')
+test: images/test   # test images (optional)
+
+# Classes
+nc: 15  # number of classes
+names:
+  0: plane
+  1: baseball-diamond
+  2: bridge
+  3: ground-track-field
+  4: small-vehicle
+  5: large-vehicle
+  6: ship
+  7: tennis-court
+  8: basketball-court
+  9: storage-tank
+  10: soccer-ball-field
+  11: roundabout
+  12: harbor
+  13: swimming-pool
+  14: helicopter
+  # 15: container-crane # Example: if you have 16 classes
+
+# Download script/URL (optional)
+download: https://github.com/ultralytics/yolov5/releases/download/v1.0/dota.zip
